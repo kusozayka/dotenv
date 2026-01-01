@@ -11,7 +11,7 @@ ExecStartPre=-/bin/sh -c 'test ! -f ~/.config/hypr/monitors.conf && touch ~/.con
 ExecStartPre=-/bin/sh -c 'test ! -f ~/.config/hypr/workspaces.conf && touch ~/.config/hypr/workspaces.conf'
 ExecStartPre=-/bin/sh -c 'test ! -f ~/.config/hypr/test.conf && touch ~/.config/hypr/test.conf'
 
-ExecStart=/usr/bin/Hyprland
+ExecStart=/usr/bin/start-hyprland
 Restart=always
 RestartSec=3
 
