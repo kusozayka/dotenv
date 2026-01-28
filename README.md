@@ -93,13 +93,20 @@ sudo ~/.local/sbin/setup-autologin
 # Small utils
 sudo pacman -S --needed  - < ~/.config/pacman/extras.list
 
+### wireguard manual actions (assumes exra packages installed (incl. wireguard-tools wireguard-dkms resolvconf):
+
+```shell
+sudo systemctl start systemd-resolved
+sudo systemctl enable systemd-resolved
+```
+
 # web browsers
 sudo yay -S --needed  - < ~/.config/yay/chromium.list
 sudo pacman -S --needed  - < ~/.config/pacman/vivaldi.list
 ```
 
 
-## Live Wallpaper support
+### Live Wallpaper support
 
 Services works well with `waypaper`. You can choose your backend, i.e. `swww` (images) or `mpvpaper` (videos).
 
