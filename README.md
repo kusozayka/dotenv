@@ -210,7 +210,7 @@ Custom Item 2|https://example.com/|~/.local/share/icons/apps/CustomItem.svg
 > find /usr/share/icons/Papirus/16x16/apps -iname "*QUERY*"
 > ```
 
-# Troubleshoopting
+# Troubleshooting
 
 ## Hyperlock crash
 
