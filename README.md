@@ -59,7 +59,7 @@ sudo systemctl enable --now bluetooth.service
 ### Network Manager GUI
 
 ```shell
-sudo yay -S nmgui-bin
+yay -S nmgui-bin
 ```
 
 ### Network Time Protocol (NTP)
@@ -101,7 +101,7 @@ sudo systemctl enable systemd-resolved
 ```
 
 # web browsers
-sudo yay -S --needed  - < ~/.config/yay/chromium.list
+yay -S --needed  - < ~/.config/yay/chromium.list
 sudo pacman -S --needed  - < ~/.config/pacman/vivaldi.list
 ```
 
@@ -111,7 +111,7 @@ sudo pacman -S --needed  - < ~/.config/pacman/vivaldi.list
 Services works well with `waypaper`. You can choose your backend, i.e. `swww` (images) or `mpvpaper` (videos).
 
 ```shell
-yay -S mpvpaper waypaper
+yay -S --needed -< ~/.config/yay/waypaper.list
 ```
 
 Optionally enable the following service to pause the live wallpaper(s) when a fullscreen window is active for better GPU/FPS performance:
