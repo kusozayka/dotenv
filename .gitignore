@@ -34,9 +34,6 @@
 /.config/webapp/*
 !/.config/webapp/disabled
 !/.config/yay
-/.config/yay/*
-!/.config/yay/chromium.list
-!/.config/yay/extras.list
 !/.local
 /.local/*
 !/.local/bin
