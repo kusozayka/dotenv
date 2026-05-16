@@ -87,20 +87,20 @@ Configures and automatically logins the current user to log into Hyprland.
 sudo ~/.local/sbin/setup-autologin
 ```
 
-## Extra packages (user utilities)
+### Extra packages (user utilities)
 
 ```shell
 # Small utils
 sudo pacman -S --needed  - < ~/.config/pacman/extras.list
 
-### wireguard manual actions (assumes exra packages installed (incl. wireguard-tools wireguard-dkms resolvconf):
-
-```shell
+# wireguard manual actions (assumes exra packages installed (incl. wireguard-tools wireguard-dkms resolvconf):
 sudo systemctl start systemd-resolved
 sudo systemctl enable systemd-resolved
 ```
 
-# web browsers
+### web browsers
+
+```shell
 yay -S --needed  - < ~/.config/yay/chromium.list
 sudo pacman -S --needed  - < ~/.config/pacman/vivaldi.list
 ```
@@ -115,6 +115,7 @@ yay -S --needed -< ~/.config/yay/waypaper.list
 ```
 
 Optionally enable the following service to pause the live wallpaper(s) when a fullscreen window is active for better GPU/FPS performance:
+
 ```shell
 systemctl --user enable --now mpv-fullscreen.timer
 ```
